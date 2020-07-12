@@ -1142,3 +1142,10 @@ footer {
 
   /* last line of media querry */
 }
+@media all and (min-width: 627px) {
+  #ham-menu {
+    display: inline-block;
+    z-index: 999;
+    border: 2px solid red;
+  }
+}
