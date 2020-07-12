@@ -1146,6 +1146,6 @@ footer {
   #ham-menu {
     display: inline-block;
     z-index: 999;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 }
