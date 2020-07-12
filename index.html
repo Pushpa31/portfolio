@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body onload="setInterval(remove,1000)">
+    <div id="overlay" data-aos="fade-down">
+      <p class="first-text">WELCOME</p>
+      <p class="second-text">Wait a bit</p>
+    </div>
+    <main>
+      <div id="container">
+        <div class="logo" style="display: inline-block;">
+          <img src="img/logo4.png" width="180" />
+        </div>
+        <div id="ham-menu" onclick="show()">
+          <span class="ham-name">MENU </span>
+          <img src="img/open-menu.png" width="20" />
+        </div>
+      </div>
+      <!--           sidebar-menu     -->
+      <div id="menu">
+        <div class="menu-cross" onclick="hide()">
+          <i class="far fa-times-circle"></i>
+        </div>
+        <div class="menu-list">
+          <h6>MENU</h6>
+          <ul>
+            <li>
+              <a href="#" class="btn-square wobble-horizontal">Projects</a>
+            </li>
+
+            <li>
+              <a href="#" class="btn-square wobble-horizontal">About me</a>
+            </li>
+
+            <li>
+              <a href="#" class="btn-square wobble-horizontal">Contacts</a>
+            </li>
+
+            <li>
+              <a href="#" class="btn-square wobble-horizontal">Dribbble</a>
+            </li>
+
+            <li>
+              <a href="#" class="btn-square wobble-horizontal">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--            end of sidebar menu   -->
+      <div class="top">
+        <div class="name" style="display: inline-block;">
+          <p class="name1">PUSHPA PANDEY</p>
+          <p class="name2">
+            Web developer<br />
+            and creator
+          </p>
+          <p class="name3">
+            Over the past years, as a web developer and designer, my aim is to
+            work with big companies and up-and-coming startups to successfully
+            help them reach their full potential and attract new customers.
+          </p>
+          <br />
+          <div class="name-project" data-aos="fade-right">
+            <span class="name4"><a href="">View projects</a></span>
+            <span class="name-project1">or</span>
+            <span class="name4"><a href="">Read about me</a></span>
+          </div>
+        </div>
+        <div class="top-left">
+          <img src="img/pp5.png" width="700" />
+        </div>
+      </div>
+      <!---------------      page2     ----------------------->
+
+      <div class="personal-projects">
+        <div class="heading">
+          <p class="page2-title1">
+            SELECTED PROJECTS
+          </p>
+          <p class="page2-title2">
+            Personal Projects
+          </p>
+        </div>
+        <div class="projects">
+          <div class="personal-1">
+            <div class="text" style="position: absolute;">
+              <div class="year">
+                2019
+              </div>
+              <div class="uiux">
+                <span class="e">e</span>Business<br />
+                Basic Ui/Ux <span class="project">Project</span>
+              </div>
+              <div
+                class="view-project"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <a href="" style="color: dimgrey;">View whole project</a>
+                <div class="arrow" data-aos="fade-left" data-aos-duration="1s">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <img src="img/project1-1.jpg" />
+          </div>
+          <div class="personal-2">
+            <div class="text" style="position: absolute;">
+              <div class="year">
+                2019
+              </div>
+              <div class="uiux">
+                <span class="surf">SURFSIDE </span
+                ><span class="side">VINTAGE</span>
+                <br />
+                <span class="e-commerce">
+                  e-commerce site
+                </span>
+              </div>
+              <div
+                class="view-project"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+                <a href="" style="color: dimgrey;">View whole project</a>
+                <div class="arrow" data-aos="fade-left" data-aos-duration="1s">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <img src="img/project2-3.jpg" />
+          </div>
+        </div>
+      </div>
+      <!--------swipper ----------->
+      <div class="certificate">
+        <span class="certif-title">
+          COURSES ENROLLED
+        </span>
+
+        <div class="my-certificates">
+          Certificates
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image: url(img/inter.png);"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(img/modernjs.png);"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(img/styling.png);"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(img/special.png);"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(img/html.png);"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(img/special.png);"
+            ></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!--end of swipper------->
+      <!-------------my skills-->
+      <div class="skills-box">
+        <div class="myskills-text">My skills</div>
+
+        <p class="myskills-text-top">PROFESSIONAL & PERSONAL</p>
+
+        <div class="skills">
+          <div class="box1">
+            <img src="img/code.png" width="45" />
+            <div class="web-development">Web development</div>
+            <div class="web-p">
+              I can develop websites by using
+              <p></p>
+              HTML,CSS
+              <p></p>
+              Javascript,Ecmascript.
+            </div>
+          </div>
+          <div class="box2">
+            <img src="img/idea.png" width="50" />
+            <div class="designing-tools">Programming And Framework</div>
+            <div class="web-p">
+              I have the core knowledge of C/C++
+              <p></p>
+              and in the backend part I can do
+              <p></p>
+              it through Laravel.
+            </div>
+          </div>
+          <div class="box3">
+            <img src="img/computer.png" width="50" />
+            <div class="computer">UI/UX Designing</div>
+            <div class="web-p">
+              can create designs for mobile &pc using
+              <p></p>
+              <p></p>
+              Photoshop
+              <p></p>
+              Illustrator
+              <p></p>
+              Adobe Xd
+            </div>
+          </div>
+          <div class="box4">
+            <img src="img/animation.png" width="50" />
+            <div class="animation">Motion Graphics</div>
+            <div class="web-p">
+              I am very much interested in creation field
+              <p></p>
+              so also taken few classes on motion graphics
+              <p></p>
+              and had a good times on Adobe After Effects.
+            </div>
+          </div>
+          <div class="box5">
+            <img src="img/videoediting.png" width="50" />
+            <div class="videoediting">Video Editing</div>
+            <div class="web-p">
+              This is kind of my hobby like creating
+              <p></p>
+              videos out of nowhere and giving it some
+              <p></p>
+              needed effects and edits so basically
+              <p>
+                I'm using Premiere Pro recently.
+              </p>
+            </div>
+          </div>
+          <div class="box6">
+            <img src="img/photography.png" width="50" />
+            <div class="photography">Photography</div>
+            <div class="web-p">
+              Honestly, I have'nt taken professional classes
+              <p></p>
+              but I have learnt some skills through Youtube
+              <p></p>
+              This is also kind of my hobby.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- next page -->
+      <div class="work-together">
+        <span class="need">
+          NEED A WEB DEVELOPER?
+        </span>
+        <span class="lets">
+          <a href=""> Let's work together <i class="fas fa-arrow-right"></i></a>
+        </span>
+      </div>
+      <hr />
+      <!-- footer -->
+      <footer>
+        <div class="contact-me">
+          <div class="last1">
+            <div class="last-contact">
+              <span class="con-info"> Contact <br />Information </span>
+
+              <p>
+                Feel free to reach out to me any time. I prefer to talk over
+                email, especially since we may be a few time zones away.
+              </p>
+              <span class="e-mail">
+                E-mail:pushpapandey0111@gmail.com
+              </span>
+              <span class="phone-no">
+                Phone no: 9801010101
+              </span>
+            </div>
+          </div>
+          <div class="last2">
+            <div class="last-follow-me">
+              <span class="follow-me">
+                Follow me on
+              </span>
+              <span class="social-media">
+                <ul>
+                  <li>Linkedin <i class="fab fa-linkedin"></i></li>
+                  <li>Instagram <i class="fab fa-instagram"></i></li>
+                  <li>Facebook <i class="fab fa-facebook-square"></i></li>
+                  <li>Twitter <i class="fab fa-twitter-square"></i></li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="../package/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <!----puspa-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
